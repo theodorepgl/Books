@@ -1,13 +1,19 @@
-<form action="/add-book" method="POST">
-  
-<label for="title">TITLE: </label>
-<input type="text" name="title"><br><br>
-
-<label for="author">AUTHOR: </label>
-<input type="text" name="author"><br><br>
-
-<button>SUBMIT</button><br><br><br>
-
-<a href="/books">Books History</a>
-
-</form>
+<section>
+   <div class="container">
+    <form action="/add-book" method="POST">
+      <h2>BOOK LIBRARY</h2>
+      <div class="inputbox">
+        <input type="text" name="title" required>
+        <label for="title">TITLE</label>
+      </div>  
+      <div class="inputbox">
+        <input type="text" name="author" required>        
+        <label for="author">AUTHOR</label>
+      </div>
+      <button>SUBMIT</button>
+      <div class="link">
+        <p><a href="/books">Show all books</a></p>
+      </div>
+    </form>
+  </div>
+</section>

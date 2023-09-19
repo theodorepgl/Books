@@ -1,5 +1,6 @@
 body {
 	background: lightgrey;
-	text-align: center;
-	color: blue;
+	color: black;
+	align-items: center;
+	font-style: italic;
 }
