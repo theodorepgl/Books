@@ -1,26 +1,22 @@
-<section>
-	<div class="container">
-		<form action=""> 
-			<h2>Book Library</h2>
-			<div class="library">
-				<% if @books.any? %>
-					<% @books.each do |book|%>
-						<p>
-							<div class="link">
-								<p><a href="/books/<%= book.id %>"><%= book.title %></a></p>
-							</div>
-						</p>
-						<p style="text-align: center;">
-							by <%= book.author %>
-						</p><br>
-					<% end %>
-				<% else %>
-					<p>No books found</p>
-				<% end %>
-			</div>
-			<div class="link">
-				<p><a href="/">Add more</a></p>
-			</div>
-		</form>
+<form action=""> 
+	<h2 style="text-align: center;">Book Library</h2>
+	<div class="library">
+		<% if @books.any? %>
+			<% @books.each do |book|%>
+				<p>
+					<div class="link">
+						<p style="text-align: center;"><a href="/books/<%= book.id %>"><%= book.title %></a></p>
+					</div>
+				</p>
+				<p style="text-align: center;">
+					by <%= book.author %>
+				</p><br>
+			<% end %>
+		<% else %>
+			<p>No books found</p>
+		<% end %>
 	</div>
-</section>
+	<div class="link">
+		<p style="text-align: center;"><a href="/">Add more</a></p>
+	</div>
+</form>

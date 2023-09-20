@@ -11,6 +11,11 @@ gem 'pg'
 gem 'activerecord'
 gem 'sinatra-activerecord'
 
+# User Authentication
+gem 'bcrypt'
+
+gem "sinatra-flash"
+
 group :development do
   gem 'debug'
 end
